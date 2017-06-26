@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS Counselor;
-DROP TABLE IF EXISTS Subject;
+DROP TABLE IF EXISTS counselors;
+DROP TABLE IF EXISTS subjects;
 
 
-CREATE TABLE wrestlers (
+CREATE TABLE counselors (
        ID INTEGER PRIMARY KEY AUTOINCREMENT,
        first_name VARCHAR (50),
        nick_name VARCHAR (50),
@@ -22,7 +22,7 @@ CREATE TABLE subjects (
 );
 
 
-INSERT INTO Counselor (first_name, nick_name, last_name, telephone, email, member_since)
+INSERT INTO counselors (first_name, nick_name, last_name, telephone, email, member_since)
        VALUES  	('Jake', 'The Snake', 'Roberts', '412 565-5656', 'snake@ifpwafcad.com', '2003-09-10'),
                	('Andre', 'The Giant', '', '606 443-4567', 'bobo@ifpwafcad.com', '2001-01-12'),
                	('The', '', 'Undertaker', '555 555-4432', 'undertaker@ifpwafcad.com', '2005-03-08'),
@@ -34,7 +34,7 @@ INSERT INTO Counselor (first_name, nick_name, last_name, telephone, email, membe
                	('Brutus', '"The Barber"', 'BeefCake', '777 513-3333', 'brutus@ifpwafcad.com', '2002-07-09');
 
 
-INSERT INTO Subject (name, description, counselor_id)
+INSERT INTO subjects (name, description, counselor_id)
 	VALUES  ('Financial Consultancy', 'Investment advice and financial planning guidance, helping you to maximize your net worth through proper asset allocation. This includes the stocks, bonds, mutual funds, insurance products, and gambling strategies proven to work.', '9'),
 		('Existential Psychotherapy', 'Often wonder what the purpose of life is? After learning the basics of Existential Psychotherapy, you''ll understand why you''re happy when you''re feeling happy, and why you''re not feeling happy when you''re not happy, allowing you to transcend to a state of pure bliss.', '7'),
 	        ('Temper Management', 'Are your angry outbursts affecting your relationships with loved-ones? Do tantrums at work hinder your ability to perform? Temper management helps you to channel your anger into positive, life-changing productivity.', '4'),
